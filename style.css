@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'icomoon';
+  src:url('fonts/icomoon.eot?-qtlhsd');
+  src:url('fonts/icomoon.eot?#iefix-qtlhsd') format('embedded-opentype'),
+    url('fonts/icomoon.woff?-qtlhsd') format('woff'),
+    url('fonts/icomoon.ttf?-qtlhsd') format('truetype'),
+    url('fonts/icomoon.svg?-qtlhsd#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+nav, ul{
+  list-style: none;
+}
+body {
+  background-repeat: no-repeat;
+  background-position: 0 , 100%;
+  width: 1000px;
+  margin: 0 auto;
+  margin-left: 15px;
+  height: 1500px;
+  font-family: Arial;
+  color: white;
+  color: red;
+}
+header {
+  height: 156px;
+}
+header img {
+  float: left;
+  margin-top: 4px;
+}
+address ul {
+  float: right;
+  
+  font-style: normal;
+  margin-top: 35px;
+  margin-right: 1px;
+  font-size: 0.85em;
+  letter-spacing: -0.028em;
+  line-height: 1em;
+  font-weight: 700;
+  margin-left: 26px;
+}
+address li {
+  margin-bottom: 5px;
+}
+nav {
+  
+  width: 100%;
+  background-color: white;
+  display: -webkit-inline-box;
+  display: inline-box;
+  margin-top: 11px;
+}
+nav li {
+position: relative;
+  font-family: Pt Sans;
+  font-weight: bold;
+  color: black;
+  padding: 9px 18px 11px 17.5px;
+}
+
+nav li ul{
+position: absolute;
+left: 0;
+top: 41px;
+display: none;
+background: red; 
+z-index: 1;
+}
+nav li:hover {
+  background-color: rgb(21,133,227);
+  color: white;
+  letter-spacing: -0.03em;
+  background-image: -webkit-linear-gradient(top,rgb(21,133,227),rgb(1,86,169));
+  padding-right: 21.5px;
+  cursor: pointer;
+}
+nav li:hover ul{
+display:block;
+
+}
