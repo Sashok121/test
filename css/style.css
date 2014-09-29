@@ -64,7 +64,7 @@ address ul {
   margin-top: 35px;
   margin-right: 1px;
   font-size: 0.85em;
-  letter-spacing: -0.38px;
+  letter-spacing: -0.3px;
   line-height: 1em;
   font-weight: 700;
   margin-left: 26px;
@@ -91,7 +91,7 @@ position: relative;
   font-weight: bold;
   color: black;
   padding: 12px 19px 9px 16.5px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.55px;
    -moz-padding-end: 19px;
     -moz-padding-start: 17px;
 }
@@ -222,5 +222,5 @@ top:-78%;
   font-size: 1.36em;
   padding: 21px 33px 20px 14px;
   font-weight: bold;
-  letter-spacing: 00.005em;
+  letter-spacing: -0.6px;
 }
