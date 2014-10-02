@@ -3,11 +3,16 @@
 	<head>
 		<title>my first jade</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta charset="utf-8">
+		<script src="js/jquery-2.1.1.js"></script>
 	</head>
 	<body>
 		<!--Start HEADER-->
 		<header>
-			<img alt="logo" src="images/logo.png">
+			<a href="#">
+				<img alt="Атланта Сити" src="images/logo.png">
+			</a>
+			
 			<address>
 				<ul class="address">
 					<li>г. Киев, ул. Здолбуновская, 7Г</li>
@@ -20,62 +25,64 @@
 			</address>
 			<!-- Start horisontal menu-->
 			<nav>
-				<li>
-					<a href="#">Главная</a>
-					<ul>
-						<li>
-							<a href="#">Подменю</a>
-						</li>
-						<li>
-							<a href="#">Подменю</a>
-						</li>
-						<li>
-							<a href="#">Подменю</a>
-						</li>
-						<li>
-							<a href="#">Подменю</a>
-						</li>
-						<li>
-							<a href="#">Подменю</a>
-						</li>
-					</ul>	
-				</li>
-				<li>
-					<a href="#">Каталог</a>
-				</li>
-				<li>
-					<a href="#">О компании</a>
-				</li>
-				<li>
-					<a href="#">Новости</a>
-				</li>
-				<li>
-					<a href="#">Вакансии</a>
-				</li>
-				<li>
-					<a href="#">Документы</a>
-				</li>
-				<li>
-					<a href="#">Прайс-лист</a>
-				</li>
-				<li>
-					<a href="#">Контакты</a>
-				</li>
-				<li >
-					<a href="#" class="buttom home"></a>
-				</li>
-				<li >
-					<a class="buttom mail" href="#"></a>
-				</li>
-				<li>
-					<a href="#" class="buttom flow-tree"></a>
-				</li>
+				<ul class ="horisontal-menu">
+					<li>
+						<a href="#">Главная</a>
+						<ul class="submenu">
+							<li>
+								<a href="#">Подменю</a>
+							</li>
+							<li>
+								<a href="#">Подменю</a>
+							</li>
+							<li>
+								<a href="#">Подменю</a>
+							</li>
+							<li>
+								<a href="#">Подменю</a>
+							</li>
+							<li>
+								<a href="#">Подменю</a>
+							</li>
+						</ul>	
+					</li>
+					<li>
+						<a href="#">Каталог</a>
+					</li>
+					<li>
+						<a href="#">О компании</a>
+					</li>
+					<li>
+						<a href="#">Новости</a>
+					</li>
+					<li>
+						<a href="#">Вакансии</a>
+					</li>
+					<li>
+						<a href="#">Документы</a>
+					</li>
+					<li>
+						<a href="#">Прайс-лист</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+					<li >
+						<a href="#" class="buttom home"></a>
+					</li>
+					<li >
+						<a class="buttom mail" href="#"></a>
+					</li>
+					<li>
+						<a href="#" class="buttom flow-tree"></a>
+					</li>
+				</ul>
 			</nav>
 			<!-- End horisontal menu-->
 			
 			<!-- Start slider-->
 			<section id="slider">
-				<article class="block">
+				<article class="block now-slide">
 					<img src="images/slide1.png" alt="">
 					<p>Промышленное сантехническое оборудоване и трубопроводная запорная арматура<br/>для систем отопления и водоснабжения</p>
 				</article>
@@ -83,21 +90,300 @@
 					<img src="images/slide2.png" alt="">
 				</article>
 				<article class="block">
-					
+					<img src="images/slide3.png" alt="">
+					<p>Промышленное сантехническое оборудоване и трубопроводная запорная арматура<br/>для систем отопления и водоснабжения</p>
 				</article>
-				<article class="block"></article>
+				<article class="block">
+					<img src="images/slide4.png" alt="">
+				</article>
+				<article class="block">
+					<img src="images/slide5.png" alt="">
+					<p>Промышленное сантехническое оборудоване и трубопроводная запорная арматура<br/>для систем отопления и водоснабжения</p>
+				</article>
 			</section>
 			<!-- End slider-->
 		</header>
 		<!-- End HEADER-->
 		<!-- Start CONTENT-->		
 		<div class="content">
-			<div>
+			<!--Start left content-->
+			<div class="left-content">
+				<!-- Start menu Catalog-->
 				<div class="catalog">
-					<h4>Каталог</h4>
+					<span class="name-category">Каталог</span>
+					<ul class="category">
+						<li>
+							<a href="#">Насосы, насосные станции, расширительные баки</a>
+						</li>
+						<li>
+							<a href="#">Запорно-регулирующая арматура</a>
+						</li>
+						<li>
+							<a href="#">Элементы трубопроводов</a>
+						</li>
+						<li>
+							<a href="#">Контрольно измерительные  приборы</a>
+						</li>
+						<li>
+							<a href="#">Фитинги</a>
+						</li>
+						<li>
+							<a href="#">Радиаторы</a>
+						</li>
+						<li>
+							<a href="#">Сопутствующие товары</a>
+						</li>
+						<li>
+							<a href="#">Чугунное литье</a>
+						</li>
+					</ul>
 				</div>
+				<!-- End menu Catalog-->
+				<!-- Start banner-->
+				<aside class="banner">
+					<p>Место под баннер<br/>190*230</p>
+					<img src="images/banner1.png" alt="">
+				</aside>
+				<!-- End banner-->
+				<!-- Start banner-->
+				<aside class="banner">
+					<p>Место под баннер<br/>190*230</p>
+					<img src="images/banner2.png" alt="">
+				</aside>
+				<!-- End banner-->
 			</div>
-			
+			<!--End left content-->
+			<!--Start main-->
+			<div class="main">
+				<div class="items">
+					<div>
+						<img src="images/item1.png">
+						<a href="#">Насосы,<br/>насосные станции,<br/>расширительные баки</a>
+						<ul>
+							<li>
+								<a href="#">Wilo</a>
+							</li>
+							<li>
+								<a href="#">Saer</a>
+							</li>
+							<li>
+								<a href="#">Grundfos</a>
+							</li>
+							<li>
+								<a href="#">Lowara</a>
+							</li>
+							<li>
+								<a href="#">Расширительные баки</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="items">
+					<div>
+						<img src="images/item2.png">
+						<a href="#">Запорно-регулирующая<br/>арматура</a>
+						<ul>
+							<li>
+								<a href="#">Wilo</a>
+							</li>
+							<li>
+								<a href="#">Saer</a>
+							</li>
+							<li>
+								<a href="#">Grundfos</a>
+							</li>
+							<li>
+								<a href="#">Lowara</a>
+							</li>
+							<li>
+								<a href="#">Расширительные баки</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>	
+				<div class="items">
+					<div>
+						<img src="images/item3.png">
+						<a href="#">Элементы<br>трубопроводов</a>
+						<ul>
+							<li>
+								<a href="#">Wilo</a>
+							</li>
+							<li>
+								<a href="#">Saer</a>
+							</li>
+							<li>
+								<a href="#">Grundfos</a>
+							</li>
+							<li>
+								<a href="#">Lowara</a>
+							</li>
+							<li>
+								<a href="#">Расширительные баки</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+					<div class="items">
+					<div>
+						<img src="images/item4.png">
+						<a href="#">Контрольно<br/>измерительные приборы</a>
+						<ul>
+							<li>
+								<a href="#">Wilo</a>
+							</li>
+							<li>
+								<a href="#">Saer</a>
+							</li>
+							<li>
+								<a href="#">Grundfos</a>
+							</li>
+							<li>
+								<a href="#">Lowara</a>
+							</li>
+							<li>
+								<a href="#">Расширительные баки</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+					<div class="items">
+					<div>
+						<img src="images/item5.png">
+						<a href="#">Фитинги</a>
+						<ul>
+							<li>
+								<a href="#">Wilo</a>
+							</li>
+							<li>
+								<a href="#">Saer</a>
+							</li>
+							<li>
+								<a href="#">Grundfos</a>
+							</li>
+							<li>
+								<a href="#">Lowara</a>
+							</li>
+							<li>
+								<a href="#">Расширительные баки</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+					<div class="items">
+					<div>
+						<img src="images/item6.png">
+						<a href="#">Радиаторы</a>
+						<ul>
+							<li>
+								<a href="#">Wilo</a>
+							</li>
+							<li>
+								<a href="#">Saer</a>
+							</li>
+							<li>
+								<a href="#">Grundfos</a>
+							</li>
+							<li>
+								<a href="#">Lowara</a>
+							</li>
+							<li>
+								<a href="#">Расширительные баки</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+					<div class="items">
+					<div>
+						<img src="images/item7.png">
+						<a href="#">Сопутствующие товары</a>
+						<ul>
+							<li>
+								<a href="#">Wilo</a>
+							</li>
+							<li>
+								<a href="#">Saer</a>
+							</li>
+							<li>
+								<a href="#">Grundfos</a>
+							</li>
+							<li>
+								<a href="#">Lowara</a>
+							</li>
+							<li>
+								<a href="#">Расширительные баки</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+					<div class="items">
+					<div>
+						<img src="images/item8.png">
+						<a href="#">Чугунное литье</a>
+						<ul>
+							<li>
+								<a href="#">Wilo</a>
+							</li>
+							<li>
+								<a href="#">Saer</a>
+							</li>
+							<li>
+								<a href="#">Grundfos</a>
+							</li>
+							<li>
+								<a href="#">Lowara</a>
+							</li>
+							<li>
+								<a href="#">Расширительные баки</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>	
+			<!--end main-->	
+			<!--Start right content-->
+			<div class="right-content">
+				<!--Start botton-->
+				<a href="#" class="btn btn-save">Скачать прайс-лист</a>
+        		<a  class="btn btn-send">Отправить заявку</a>
+				<!--End botton-->
+				<!--Start News-->
+                <span class="name-category">Новости</span>
+				<article class="news">
+            		<span>30.01.2012</span>
+            		<a  href="#">Муфты, отводы, переходы, прокладки, вибровставки, заглушки</a>
+            		<p>В отопительных и водопроводных системах, в газопроводах низкого давления, а также в различных неагрессивных средах…</p>
+        		</article>
+				<!--End News-->
+				<!--Start News-->
+				<article class="news">
+            		<span>25.01.2012</span>
+            		<a  href="#">КГГА объяснила преимущества сдачи в аренду объектов теплоэнергетики</a>
+            		<p>Во время заседания сессии Киевсовета большинством голосов было принято решение о предоставлении в концессию объектов теплоэнергетического…</p>
+        		</article>
+				<!--End News-->
+				<!--Start News-->
+				<article class="news">
+            		<span>14.01.2012</span>
+            		<a  href="#">Новое поступление фланцев больших диаметров и фланцев</a>
+            		<p>Обращаем Ваше внимание на расширение ассортимента фланцев. У нас добавились фланцы плоские до DN 1000 и воротниковые фланцы до DN 600…</p>
+        		</article>
+				<!--End News-->			
+			</div>		
+			<!--end right content-->
+			<div class="last-text">
+				<h1 class="name-category">Компания OOO «Атланта Сити Центр»</h1>
+				<p>осуществляет оптовые и розничные поставки сантехнического и инженерного оборудования во все регионы Украины.</p>
+				<p>	Основными направлениями деятельности нашей компании являются:поставка промышленного оборудования, трубопроводной запорной арматуры для систем тепло-, водо-, газоснабжения как зарубежных, так и отечественных производителей.</p>
+			</div>			
 		</div>
 		<!-- End CONTENT-->
 
@@ -105,6 +391,36 @@
 		<footer>
 		</footer>
 		<!-- End FOOTER-->
+		<!--Start modal-->
+		<div id="modal">
+  			<h2>Modal</h2>
+  			<dl>
+  				<dt>Имя</dt>
+  				<dd>
+  					<input type="text" name="name" placeholder="Name"/>
+  				</dd>
+				<dt>Емейл</dt>
+  				<dd>
+  					<input type="text" name="mail" placeholder="E-mail"/>
+  				</dd>
+  				
+				<dt>Телефон</dt>
+  				<dd>
+  					<input type="text" name="name" placeholder="Phone number"/>
+  				</dd>
+  				<dt>Сообщение</dt>
+  				<dd>
+  					<textarea name="message" placeholder="Message..." rows="30" cols="10">
+  						
+  					</textarea>
+  				</dd>
+  				
+  			</dl>
+    		<a class="close" >Close</a>
 
+		</div>
+		<!--End modal-->
+
+		<script src="js/script.js"></script>
 	</body>
 </html>
