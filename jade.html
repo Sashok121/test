@@ -3,8 +3,11 @@
 	<head>
 		<title>my first jade</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<meta charset="utf-8">
-		<script src="js/jquery-2.1.1.js"></script>
+        <link rel="stylesheet" media="screen" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.min.css">        <meta charset="utf-8">
+		<script src="js/jquery-2.1.1.js" ></script>
+		<script src="js/jquery.mask.js" type="text/javascript"></script>
+        <script src="js/jquery.validate.js"></script>
+
 	</head>
 	<body>
 		<!--Start HEADER-->
@@ -392,33 +395,29 @@
 		</footer>
 		<!-- End FOOTER-->
 		<!--Start modal-->
-		<div id="modal">
-  			<h2>Modal</h2>
-  			<dl>
-  				<dt>Имя</dt>
-  				<dd>
-  					<input type="text" name="name" placeholder="Name"/>
-  				</dd>
-				<dt>Емейл</dt>
-  				<dd>
-  					<input type="text" name="mail" placeholder="E-mail"/>
-  				</dd>
-  				
-				<dt>Телефон</dt>
-  				<dd>
-  					<input type="text" name="name" placeholder="Phone number"/>
-  				</dd>
-  				<dt>Сообщение</dt>
-  				<dd>
-  					<textarea name="message" placeholder="Message..." rows="30" cols="10">
-  						
-  					</textarea>
-  				</dd>
-  				
-  			</dl>
-    		<a class="close" >Close</a>
-
-		</div>
+		<form id="modal">
+            <fieldset class="ui-widget ui-widget-content ui-corner-all">
+                <legend class="ui-widget ui-widget-header ui-corner-all">Введите даные</legend>
+                <p>
+                    <label for="cname">ФИО</label>
+                    <input id="cname" name="name" class="ui-widget-content" minlength="2" required type="text">
+                <p>
+                    <label for="cemail">E-Mail</label>
+                    <input id="cemail" name="email" class="ui-widget-content" type="email" required>
+                </p>
+                <p>
+                    <label for="cphone">Теленфон</label>
+                    <input id="cphone" name="phone" class="ui-widget-content" type="tel" required>
+                </p>
+                <p>
+                    <label for="ccomment">Описание</label>
+                    <textarea id="ccomment" name="comment" class="ui-widget-content" required></textarea>
+                </p>
+                <p>
+                    <button class="submit" type="submit">Submit</button>
+                </p>
+            </fieldset>
+		</form>
 		<!--End modal-->
 
 		<script src="js/script.js"></script>
